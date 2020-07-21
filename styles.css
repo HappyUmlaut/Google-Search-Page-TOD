@@ -1,0 +1,236 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Inician mis estilos */
+
+body{
+	font-size: 14px;
+	color: #4d5156;
+}
+
+a{
+	font-size: 20px;
+	line-height: 1.3;
+	color: #1a0dab;
+	text-decoration: none;
+	line-height: 35px;
+}
+b{
+	text-decoration: black;
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	padding-left: 30px;
+	padding-top: 15px;
+	line-height: 1.58;
+	width: 600px;
+}
+
+.block{
+	padding-top: 25px;
+}
+
+.pageresult{
+	color: #202124;
+}
+
+#anuncio{
+	display: block;
+	padding-top: 5px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: 65px 48px 53px 1fr 40px 40px;
+	grid-template-columns: 150px 1fr 233.2px;
+	grid-template-areas: 
+		"logo search menu"
+		". tabs ."
+		"results results results"
+		". main ."
+		". footer1 ."
+		". footer2 .";
+}
+.logo{
+	grid-area: logo;
+	padding-top: 28px;
+	padding-left: 25px;
+}
+.search{
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 20px 0 0 13px;
+	width: 100%;
+}
+.menu{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.tabs{
+	display: flex;
+	flex-wrap: nowrap;
+	padding-top: 20px;
+	padding-left: 20px;
+	justify-content: space-between;
+	width: 670px;
+}
+.tab_container{
+	display: flex;
+	justify-content: center;
+	width: 71px;
+	font-size: 13px;
+	margin: 0px 0px;
+	text-decoration: none;
+	margin-bottom: -15px;
+}
+
+.tab_text{
+	color: #5f6368;
+	align-self: center;
+	padding: 0px 4px;
+}
+
+.results{
+	width: 100%;
+	border-top: solid 1px rgb(218, 218, 218);
+	margin-top: 15px;
+	justify-content: start;
+	color: #70757a;
+	padding: 15px 30px;
+}
+
+#todo{
+	border-bottom: 3px;
+	border-style: solid;
+	border-color: rgb(6, 59, 175);
+}
+
+#preferencias{
+	margin-left: 5px; 
+	margin-right: 25px;
+}
+
+#videos{
+	display: flex;
+	padding-top: 20px;
+	justify-self: center;
+	align-content: center;
+}
+
+#videotext{
+	margin-left: 7px;
+	color: black;
+	text-decoration: none;
+}
+
+
+#searchbar{
+	display: flex;
+	border: 1px solid #dfe1e5;
+	border-radius: 24px;
+	background-color: transparent;
+	width: 692px;
+	padding-left: 20px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#cruz{
+	position: relative;
+	align-self: center;
+	left: -79px;
+}
+#lupa{
+	position: relative;
+	align-self: center;
+	left: -55px;
+}
+#grid{
+	position: relative;
+	top: 36px;	
+	left: 18px;
+}
+#circulo{
+	background-color: #dfe1e5;
+	border-radius: 50%;
+	box-shadow: 0 0 0 15px #dfe1e5 ;
+	display: none;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+	z-index: -1;
+}
+#grid:hover + #circulo{
+	display: block;
+	position: relative;
+	top: 39px;
+	left: 5px;
+}
+.button {
+	color: #fff;
+	background: #256ece;
+	position: absolute;
+	top: 25px;
+	left: 1190px;
+	border: 0px;
+	border-radius: 4px;
+	align-content: center;
+	width: 135px;
+	height: 36px;
+	font-size: 14px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+.button:hover{
+	box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
+	background: #296bc2;
+	
+}
