@@ -63,6 +63,22 @@ b{
 	font-weight: bold;
 }
 
+.footer1{
+	display: flex;
+	border-top: 2px solid #e4e4e4;
+	width: 100%;
+	background-color: #f2f2f2;
+	font-size: 14px;
+	align-items: center;
+}
+
+.footer2{
+	border-top: 1px solid #e4e4e4;
+	font-size: 14px;
+	width: 100%;
+	background-color: #f2f2f2;
+}
+
 a:hover{
 	text-decoration: underline;
 }
@@ -100,12 +116,68 @@ a:hover{
 	padding: 3px 4px 0 4px;
 }
 
+.links-busquedas{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: bold;
+	width: max-content;
+	padding: 3px 0;
+	padding-right: 32px;
+}
+
+.google-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: max-content;
+	height: 56px;
+	position: relative;
+	left: 150px;
+}
+
+.google-letters-container{
+	display: flex;
+	height: 40px;
+	width: 20px;
+	padding: 0 1px;
+}
+
+.google-letters-images{
+	display: flex;
+	width: 20px;
+	height: 20px;
+	align-self: flex-end;
+}
+
+.google-numbers-container{
+	display: flex;
+	height: 40px;
+	width: 20px;
+	padding: 0 1px;
+	font-size: 14px;
+	height: 16px;
+	justify-content: center;
+	color: #4285f4;
+}
+
+.links-busquedas:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 .white-video{
 	width: 48px;
 	height: 48px;
 	position: relative;
 	top: -83px;
 	left: 82px;
+}
+
+.search-icon-busquedas{
+	width: 14.58px;
+	height: 14.58px;
+	margin-right: 15px;
 }
 
 .video-link{
@@ -134,9 +206,72 @@ a:hover{
 	color: #202124;
 }
 
+.footer-link{
+	font-size: 14px;
+	color: #4d5156;
+}
+
+.footer-link:hover{
+	cursor: pointer;
+	text-decoration: none;
+	color: #333;
+}
+
+.footer-link2{
+	font-size: 14px;
+	color: #4d5156;	
+	margin-left: 25px;
+}
+
+.footer-link2:hover{
+	color: #333;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 #anuncio{
 	display: block;
 	padding-top: 5px;
+}
+
+#mexico{
+	margin-left: 25px;
+	padding-right: 13px;
+	border-right: rgba(0, 0, 0, 0.15) 1px solid;
+}
+
+#lajoya{
+	padding-left: 20px;
+}
+
+#letter-g{
+	height: 30px;
+	width: 30px;
+}
+
+#letter-g-container{
+	width: 30px;
+}
+
+#gle-container{
+	width: 60px;
+	height: 60px;
+	position: relative;
+	top: 10px;
+}
+
+#gle{
+	height: 40px;
+	width: 50px;
+}
+
+#google-letters{
+	margin-bottom: 40px;
+}
+
+#siguiente{
+	position: relative;
+	left: 80px;
 }
 
 .container{
@@ -148,8 +283,8 @@ a:hover{
 		". tabs ."
 		"results results results"
 		". main ."
-		". footer1 ."
-		". footer2 .";
+		"footer1 footer1 footer1"
+		"footer2 footer2 footer2";
 }
 .logo{
 	grid-area: logo;
@@ -211,6 +346,14 @@ a:hover{
 	justify-content: start;
 	color: #70757a;
 	padding: 15px 30px;
+}
+
+#busquedas{
+	color: #222;
+	font-size: 20px;
+	line-height: 1.3;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #todo{
@@ -281,13 +424,19 @@ a:hover{
 	height: 10px;
 	opacity: 0.5;
 	z-index: -1;
-}
-#grid:hover + #circulo{
-	display: block;
 	position: relative;
 	top: 39px;
 	left: 5px;
 }
+#grid:hover + #circulo{
+	display: block;
+}
+
+
+#grid:hover ~ #boton{
+	left: 30px;
+}
+
 .button {
 	color: #fff;
 	background: #256ece;
@@ -302,10 +451,15 @@ a:hover{
 	font-size: 14px;
 	font-family: Helvetica, Arial, sans-serif;
 }
+
 .button:hover{
 	box-shadow: 0 1px 2px 0 rgba(66,133,244,0.3),0 1px 3px 1px rgba(66,133,244,0.15);
 	background: #296bc2;
 	
+}
+
+#boton{
+
 }
 
 #video-bloc{
