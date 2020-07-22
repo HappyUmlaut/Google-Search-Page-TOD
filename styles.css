@@ -19,8 +19,8 @@ time, mark, audio, video{
 	vertical-align: baseline;
 }
 
-input[type="search"]{
-  -webkit-appearance: textfield;
+*,*:focus,*:hover{
+    outline:none;
 }
 
 /* HTML5 display-role reset for older browsers */
